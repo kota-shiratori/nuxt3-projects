@@ -5,8 +5,6 @@
 </template>
 
 <script setup>
-import { definePageMeta } from 'nuxt/dist/pages/runtime';
-
 definePageMeta({
     validate: async(route) => {
         return /^\d+$/.test(route.params.id);
